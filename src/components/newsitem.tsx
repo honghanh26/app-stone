@@ -37,9 +37,9 @@ export default function NewsItem({ title, date, desc, img, zoom }: ItemProps) {
             </div>
             <div className="box-text text-center">
               <div className="box-text-inner blog-post-inner">
-                <h5 className="post-title is-large">{title}</h5>
+                <h5 className="post-title is-large uppercase font-semibold">{title}</h5>
                 <div className={`is-divider ${styles.divider}`} />
-                <p className="from_the_blog_excerpt ">
+                <p className="from_the_blog_excerpt text-sm">
                   {desc}
                   [...]
                 </p>

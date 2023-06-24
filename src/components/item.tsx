@@ -3,7 +3,7 @@ import React from "react";
 
 import { ItemProps } from "@/types";
 
-export default function Item({ title }: ItemProps) {
+export default function Item({ title, img }: ItemProps) {
   return (
     <div className="product-small box has-hover box-bounce box-text-bottom">
       <div className="box-image">
@@ -14,30 +14,13 @@ export default function Item({ title }: ItemProps) {
             <img
               width={450}
               height={338}
-              src="https://atcstone.vn/wp-content/uploads/2020/09/DA-HOA-CUONG-LAT-NEN-CAO-CAP-450x338.jpg"
-              data-src="https://atcstone.vn/wp-content/uploads/2020/09/DA-HOA-CUONG-LAT-NEN-CAO-CAP-450x338.jpg"
+              src={img}
+              data-src={img}
               className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail lazy-load-active"
-              alt="DA HOA CUONG LAT NEN CAO CAP 450x338 - Trang chủ"
+              alt={title}
               loading="lazy"
               title="Trang chủ"
             />
-          </Link>
-        </div>
-        <div className="image-tools top right show-on-hover" />
-        <div className="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
-          {" "}
-          <Link
-            href="https://atcstone.vn/da-op-lat-nen/"
-            data-quantity={1}
-            className="add-to-cart-grid no-padding is-transparent product_type_simple"
-            data-product_id={1764}
-            data-product_sku=""
-            aria-label="Đọc thêm về “ĐÁ LÁT NỀN”"
-            rel="nofollow"
-          >
-            <div className="cart-icon tooltip is-small tooltipstered">
-              <strong>+</strong>
-            </div>
           </Link>
         </div>
       </div>
