@@ -29,8 +29,8 @@ export default function Home() {
           <div className="col small-12 large-12">
             <div className="col-inner">
               <div className="row equalize-box large-columns-4 medium-columns-3 small-columns-2 row-small has-shadow row-box-shadow-1 row-box-shadow-2-hover">
-                {granite.map((item) => (
-                  <TypeItem title={item.title} img={item.img} />
+                {granite.map((item, idx) => (
+                  <TypeItem key={idx} title={item.title} img={item.img} />
                 ))}
               </div>
             </div>
@@ -51,8 +51,8 @@ export default function Home() {
           <div className="col small-12 large-12">
             <div className="col-inner">
               <div className="row equalize-box large-columns-4 medium-columns-3 small-columns-2 row-small has-shadow row-box-shadow-1 row-box-shadow-2-hover">
-                {marble.map((item) => (
-                  <TypeItem title={item.title} img={item.img} />
+                {marble.map((item, idx) => (
+                  <TypeItem key={idx} title={item.title} img={item.img} />
                 ))}
               </div>
             </div>
@@ -63,8 +63,8 @@ export default function Home() {
           <div className="col small-12 large-12">
             <div className="col-inner">
               <div className="row equalize-box large-columns-4 medium-columns-3 small-columns-2 row-xsmall row-full-width">
-                {categoryGranite.map((item) => (
-                  <div className="col">
+                {categoryGranite.map((item, idx) => (
+                  <div key={idx} className="col">
                     <div className="col-inner">
                       <div className="badge-container absolute left top z-1" />
                       <Item title={item.title} img={item.img} />
@@ -80,8 +80,9 @@ export default function Home() {
           <div className="col small-12 large-12">
             <div className="col-inner">
               <div className="row large-columns-4 medium-columns-1 small-columns-2 has-shadow row-box-shadow-1 row-box-shadow-2-hover">
-                {serviceStone.map((item) => (
+                {serviceStone.map((item, idx) => (
                   <NewsItem
+                    key={idx}
                     title={item.title}
                     img={item.img}
                     desc={item.desc}

@@ -1,11 +1,11 @@
 export const categories = [
   {
     title: "Giới Thiệu",
-    url: "/products"
+    url: "introSection"
   },
   {
     title: "Đá Granite",
-    url: "/products"
+    url: "graniteSection"
   },
   {
     title: "Đá Marble",

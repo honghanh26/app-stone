@@ -9,9 +9,9 @@ export default function Navbar() {
       <div className="flex-row container">
         <div className="flex-col flex-left">
           <ul className="nav header-nav header-bottom-nav nav-left nav-box nav-size-medium nav-spacing-xsmall nav-uppercase">
-            {categories.map((category) => (
+            {categories.map((category, idx) => (
               <li
-                id="menu-item-624"
+                key={idx}
                 className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-624"
               >
                 <Link href="/" className="nav-top-link px-2 md:px-4">
